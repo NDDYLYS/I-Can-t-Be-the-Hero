@@ -90,12 +90,6 @@ public class LogManager : SingletonGameObject<LogManager>
                     case LogCategoryEnum.Etc:
                         DebugMethod("yellow", _category, _log);
                         break;
-                    case LogCategoryEnum.Data:
-                        DebugMethod("white", _category, _log);
-                        break;
-                    case LogCategoryEnum.PathFinder:
-                        DebugMethod("orange", _category, _log);
-                        break;
                     default:
                         DebugMethod("white", _category, _log);
                         break;

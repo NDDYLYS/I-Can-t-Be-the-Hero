@@ -296,6 +296,22 @@ public class CustomWindow : EditorWindow
 
         GUILayout.EndHorizontal();
 
+        EditorGUILayout.Space(10f);
+
+        DrawHeader("BattleElement");
+
+        GUILayout.BeginHorizontal();
+
+        if (GUILayout.Button("BattleElement", GUILayout.ExpandWidth(false)))
+        {
+            var r1 = Random.Range(0, (int)ElementEnum.Max);
+            var r2 = Random.Range(0, (int)ElementEnum.Max);
+
+            Util.BattleElementDamage((ElementEnum)r1, (ElementEnum)r2);
+        }
+
+        GUILayout.EndHorizontal();
+
         //EditorGUILayout.Space(10f);
         //DrawHeader("");
         //GUILayout.BeginHorizontal();
